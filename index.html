@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Sadupa | Premium Quantity Surveyor Portfolio</title>
+    <meta name="description"
+        content="Professional Portfolio of Mr. Sadupa, an experienced Quantity Surveyor specializing in MEP, Cost Management, and BIM.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="btn-primary">Contact Me</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <h2 class="sub-title">Quantity Surveyor & Cost Professional</h2>
+                    <h1>Mr. Sadupa</h1>
+                    <p>Dynamic Cost Professional with extensive experience in international consultancy and contracting.
+                        Specializing in MEP quantity take-offs, cost planning, and BIM-integrated measurements.</p>
+                    <div class="hero-btns">
+                        <a href="#experience" class="btn-primary">View Experience</a>
+                        <a href="#contact" class="btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="zoom-in">
+                    <div class="image-wrapper">
+                        <img src="propic/bgremove.svg" alt="Mr. Sadupa">
+                        <div class="experience-badge">
+                            <span class="years">5+</span>
+                            <span class="text">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Professional Identity</h2>
+                    <p>Brief overview of my career goals and highlights.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Versatile Exposure</h3>
+                        <p>Balanced experience in both contracting and consultancy environments, providing a holistic
+                            view of project lifecycle.</p>
+                    </div>
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-globe"></i>
+                        <h3>Global Perspective</h3>
+                        <p>Gained international experience, adapting to various regulatory standards and multicultural
+                            work environments.</p>
+                    </div>
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Future Focused</h3>
+                        <p>Aimed at contributing to sustainable construction through precise cost management and digital
+                            transformation using BIM.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section-padding bg-alt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <p>A detailed record of my employment history and key roles.</p>
+                </div>
+
+                <div class="tabs-container" data-aos="fade-up">
+                    <div class="tabs">
+                        <button class="tab-link active" onclick="openExperience(event, 'consultancy')">Consultancy &
+                            Pre-Contract</button>
+                        <button class="tab-link" onclick="openExperience(event, 'contracting')">Contracting &
+                            Post-Contract</button>
+                    </div>
+
+                    <div id="consultancy" class="tab-content active">
+                        <div class="experience-list">
+                            <div class="exp-item">
+                                <div class="exp-dot"></div>
+                                <div class="exp-header">
+                                    <h3>Quantity Surveyor (Consultancy)</h3>
+                                    <span class="exp-date">2022 - Present</span>
+                                </div>
+                                <p class="company">International MEP Consultancy</p>
+                                <ul class="exp-details">
+                                    <li>Preparing MEP quantity take-offs using <strong>BIMMeasure</strong> and
+                                        <strong>CADMeasure</strong>.
+                                    </li>
+                                    <li>Producing BoQs according to <strong>NRM2, POMI, and CESMM</strong> standards.
+                                    </li>
+                                    <li>Elemental cost breakdowns and performance of cost planning.</li>
+                                    <li>Managing RFI sheets, tender evaluation, and comparison.</li>
+                                    <li>Actively supporting value engineering exercises for cost optimization.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="contracting" class="tab-content">
+                        <div class="experience-list">
+                            <div class="exp-item">
+                                <div class="exp-dot"></div>
+                                <div class="exp-header">
+                                    <h3>Quantity Surveyor (Contracting)</h3>
+                                    <span class="exp-date">2019 - 2022</span>
+                                </div>
+                                <p class="company">Leading Construction Contractor</p>
+                                <ul class="exp-details">
+                                    <li>Conducting precise site measurements for accurate billing.</li>
+                                    <li>Preparation of Interim Payment Applications (IPA) for ongoing projects.</li>
+                                    <li>Supporting the preparation of variations and contractual claims.</li>
+                                    <li>Subcontractor management including payment certification and performance review.
+                                    </li>
+                                    <li>Forecasting material quantities to ensure supply chain efficiency.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Portfolio Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Major Projects</h2>
+                    <p>A showcase of impactful projects where I played a key role.</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-img">
+                            <div class="project-overlay">
+                                <span class="project-role">MEP Specialist</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>International Heights Plaza</h3>
+                            <p class="project-meta"><strong>Value:</strong> £85M | <strong>Client:</strong> Vertex
+                                Developments</p>
+                            <p>Led MEP quantity take-offs using BIMMeasure. Managed elemental cost breakdowns and
+                                supported value engineering that saved 10% on initial MEP budget.</p>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img">
+                            <div class="project-overlay">
+                                <span class="project-role">Lead QS (Contracting)</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Coventry Urban Hub</h3>
+                            <p class="project-meta"><strong>Value:</strong> £42M | <strong>Contractor:</strong>
+                                BuildRite UK</p>
+                            <p>Responsible for site measurements, interim payment applications, and subcontractor
+                                management. Successfully negotiated three major variation claims.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv-download" data-aos="fade-up">
+                    <p>Interested in a more detailed look? Download my full CV for a complete overview.</p>
+                    <a href="#" class="btn-download">
+                        <i class="fas fa-file-pdf"></i>
+                        Download CV (Updated 2025)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding bg-alt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Tools & Expertise</h2>
+                    <p>Proficiency in industry-standard software and methodologies.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-right">
+                        <h3>Measurement & BIM</h3>
+                        <div class="skill-tags">
+                            <span>BIMMeasure</span>
+                            <span>CADMeasure</span>
+                            <span>CostX</span>
+                            <span>Revit</span>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-left">
+                        <h3>Drafting & Planning</h3>
+                        <div class="skill-tags">
+                            <span>AutoCAD</span>
+                            <span>MS Project</span>
+                            <span>Primavera P6</span>
+                            <span>Bluebeam</span>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-right">
+                        <h3>Data & Documentation</h3>
+                        <div class="skill-tags">
+                            <span>Excel Dashboards</span>
+                            <span>QS Calculators</span>
+                            <span>Scripts</span>
+                            <span>Microsoft 365</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section id="education" class="education section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Education & Credentials</h2>
+                    <p>Academic foundation and professional development.</p>
+                </div>
+                <div class="edu-grid">
+                    <div class="edu-item" data-aos="fade-up">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-content">
+                            <h3>MSc & BSc (Hons) in Quantity Surveying</h3>
+                            <p>Specialized in construction economics and management. High academic standing with
+                                professional focus.</p>
+                        </div>
+                    </div>
+                    <div class="edu-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="edu-icon"><i class="fas fa-file-contract"></i></div>
+                        <div class="edu-content">
+                            <h3>National Diploma in QS</h3>
+                            <p>Foundational technical training in measurement and site operations.</p>
+                        </div>
+                    </div>
+                    <div class="edu-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="edu-icon"><i class="fas fa-award"></i></div>
+                        <div class="edu-content">
+                            <h3>Professional Development</h3>
+                            <p>Active RICS APC Pathway candidate. Completed CIOB-related trainings and advanced CPD
+                                online courses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding bg-alt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p>Based in Coventry, UK. Ready for new opportunities and collaborations.</p>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:example@email.com">example@email.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+447000000000">+44 7000 000 000</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="#" target="_blank">linkedin.com/in/sadupa-qs</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Coventry, United Kingdom</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" data-aos="fade-left">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mr. Sadupa. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
