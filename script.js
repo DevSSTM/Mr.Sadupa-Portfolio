@@ -7,29 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
         mirror: false
     });
 
-    // Custom Cursor logic
-    const cursor = document.querySelector('.cursor');
-    const follower = document.querySelector('.cursor-follower');
-
     document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-
-        // Update background glow
+        // Update background glow positions
         document.body.style.setProperty('--mouse-x', e.clientX + 'px');
         document.body.style.setProperty('--mouse-y', e.clientY + 'px');
-
-        setTimeout(() => {
-            follower.style.left = e.clientX - 15 + 'px';
-            follower.style.top = e.clientY - 15 + 'px';
-        }, 50);
     });
 
-    // Hover effects for links
-    document.querySelectorAll('a, button, .project-card').forEach(el => {
-        el.addEventListener('mouseenter', () => follower.style.transform = 'scale(1.5)');
-        el.addEventListener('mouseleave', () => follower.style.transform = 'scale(1)');
-    });
+    // Remove hover effects for custom cursor as it is deleted
+    // Keeping this section empty or removing unused code is cleaner
 
     // Loader
     const loader = document.querySelector('.loader-wrapper');
