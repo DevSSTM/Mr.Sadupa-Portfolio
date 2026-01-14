@@ -252,7 +252,7 @@ h4 {
 }
 
 .nav-links a:hover,
-.nav-links a.active {
+.nav-links a.active:not(.btn-primary) {
     color: var(--primary-color);
 }
 
@@ -339,7 +339,7 @@ h4 {
 
 @media (max-width: 992px) {
     .hero {
-        padding-top: 80px;
+        padding-top: 60px;
         display: block;
         height: auto;
     }
@@ -365,6 +365,21 @@ h4 {
 
     .hero p {
         margin: 0 auto 40px;
+    }
+}
+
+.hero-content {
+    margin-left: -15%;
+    /* Shift slightly to the left */
+    z-index: 2;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .hero-content {
+        margin-left: 0;
+        /* Reset for mobile */
+        padding: 0 20px;
     }
 }
 
@@ -983,10 +998,12 @@ h4 {
     }
 
     .experience-badge {
-        bottom: 50px;
+        bottom: 20px;
         right: 50%;
         transform: translateX(50%);
         animation: floatMobile 3s ease-in-out infinite;
+        white-space: nowrap;
+        width: fit-content;
     }
 }
 
