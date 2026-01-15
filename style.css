@@ -802,8 +802,9 @@ h4 {
 /* Skills */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    justify-content: center;
 }
 
 .skill-category {
@@ -902,6 +903,13 @@ h4 {
 .edu-item {
     text-align: center;
     padding: 30px;
+}
+
+.edu-item.full-width {
+    grid-column: 1 / -1;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .edu-icon {
